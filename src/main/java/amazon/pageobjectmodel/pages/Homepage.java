@@ -1,6 +1,6 @@
-package muradil.amazon.pageobjectmodel.pages;
+package amazon.pageobjectmodel.pages;
 
-import muradil.amazon.utilsclasses.WebDriverUtils;
+import amazon.pageobjectmodel.utilsclasses.WebDriverUtils;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

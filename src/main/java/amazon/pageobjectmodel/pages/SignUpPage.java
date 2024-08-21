@@ -1,10 +1,8 @@
-package muradil.amazon.pageobjectmodel.pages;
+package amazon.pageobjectmodel.pages;
 
-import muradil.amazon.utilsclasses.Config;
-import muradil.amazon.utilsclasses.WebDriverUtils;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
+import amazon.pageobjectmodel.utilsclasses.Config;
+import amazon.pageobjectmodel.utilsclasses.WebDriverUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 

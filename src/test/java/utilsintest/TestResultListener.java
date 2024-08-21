@@ -13,5 +13,6 @@ public class TestResultListener implements ITestListener {
 
     public void onTestFailure(ITestResult result){
         screenShotUtility.takeScreenShot(result.getMethod().getMethodName().trim() + "-Failed", (ChromeDriver) result.getTestContext().getAttribute("driver"));
+
     }
 }

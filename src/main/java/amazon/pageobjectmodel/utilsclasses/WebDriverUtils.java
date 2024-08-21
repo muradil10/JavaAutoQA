@@ -1,4 +1,4 @@
-package muradil.amazon.utilsclasses;
+package amazon.pageobjectmodel.utilsclasses;
 
 import net.datafaker.Faker;
 import org.openqa.selenium.By;
@@ -20,7 +20,7 @@ public class WebDriverUtils {
     Faker faker;
 
     public WebDriverUtils(WebDriver driver) {
-            this.driver = driver;
+        this.driver = driver;
         faker = new Faker();
     }
 

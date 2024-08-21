@@ -1,10 +1,10 @@
 package testngframework;
 
-import muradil.amazon.pageobjectmodel.pages.Homepage;
-import muradil.amazon.pageobjectmodel.pages.SignInPage;
-import muradil.amazon.pageobjectmodel.pages.SignUpPage;
-import muradil.amazon.utilsclasses.BaseClass;
-import muradil.amazon.utilsclasses.Config;
+import amazon.pageobjectmodel.pages.Homepage;
+import amazon.pageobjectmodel.pages.SignInPage;
+import amazon.pageobjectmodel.pages.SignUpPage;
+import amazon.pageobjectmodel.utilsclasses.BaseClass;
+import amazon.pageobjectmodel.utilsclasses.Config;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
 import utilsintest.TestResultListener;
