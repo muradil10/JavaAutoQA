@@ -1,12 +1,11 @@
-package muradil.amazon.pageobjectmodel.pages;
+package amazon.pageobjectmodel.pages;
 
-import muradil.amazon.utilsclasses.WebDriverUtils;
+import amazon.pageobjectmodel.utilsclasses.WebDriverUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /**
  * @aauthor : mr.muradil

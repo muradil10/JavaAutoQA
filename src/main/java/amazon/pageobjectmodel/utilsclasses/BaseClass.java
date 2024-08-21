@@ -1,4 +1,4 @@
-package muradil.amazon.utilsclasses;
+package amazon.pageobjectmodel.utilsclasses;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -24,4 +24,3 @@ public class BaseClass {
         driver.quit();
     }
 }
-
