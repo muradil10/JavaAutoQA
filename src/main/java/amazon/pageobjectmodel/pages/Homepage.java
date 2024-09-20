@@ -31,7 +31,7 @@ public class Homepage {
     WebElement signIn;
     @FindBy(xpath = "//input[@id='nav-search-submit-button']")
     WebElement searchSubmitButton;
-    @FindBy(xpath = "//*[@id='search']/span[2]/div/h1/div/div[1]/div/div")
+    @FindBy(xpath = "//*[@id=\"search\"]/span/div/h1/div/div[1]/div/div")
     WebElement searchResultsSummary;
 
     @FindBy(xpath = "//*[@id='nav-link-accountList']")
