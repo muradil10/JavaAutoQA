@@ -3,10 +3,11 @@ package testngframework;
 import amazon.pageobjectmodel.pages.Homepage;
 import amazon.pageobjectmodel.pages.SignInPage;
 import amazon.pageobjectmodel.pages.SignUpPage;
-import amazon.pageobjectmodel.utilsclasses.BaseClass;
-import amazon.pageobjectmodel.utilsclasses.Config;
+import utilsclasses.BaseClass;
+import utilsclasses.Config;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
+import utilsclasses.ConfigReader;
 import utilsintest.TestResultListener;
 
 /**
@@ -15,7 +16,7 @@ import utilsintest.TestResultListener;
  **/
 
 @Listeners(TestResultListener.class)
-public class TestNGRunner extends BaseClass {
+public class AmazonTestNGRunner extends BaseClass {
     Homepage homepage;
     SignUpPage signUpPage;
     SignInPage signInPage;
@@ -23,6 +24,7 @@ public class TestNGRunner extends BaseClass {
     @BeforeClass
     public void setUp(ITestContext context) {
         openBrowser();
+        driver.get(Config.readFromConfig("config.properties", "amazon.url"));
         homepage = new Homepage(driver);
         signUpPage = new SignUpPage(driver);
         signInPage = new SignInPage(driver);

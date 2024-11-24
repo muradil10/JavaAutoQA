@@ -1,7 +1,7 @@
 package amazon.pageobjectmodel.pages;
 
-import amazon.pageobjectmodel.utilsclasses.Config;
-import amazon.pageobjectmodel.utilsclasses.WebDriverUtils;
+import utilsclasses.Config;
+import utilsclasses.WebDriverUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
