@@ -1,4 +1,4 @@
-package amazon.pageobjectmodel.utilsclasses;
+package utilsclasses;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +16,7 @@ public class BaseClass {
         //ChromeOptions options =new ChromeOptions();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(Config.readFromConfig("config.properties", "amazon.url"));
+//        driver.get(Config.readFromConfig("config.properties", ".url"));
     }
 
     public static void closeBrowser(){
