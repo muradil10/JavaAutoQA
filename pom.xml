@@ -163,6 +163,8 @@
                 <version>3.11.0</version>
                 <configuration>
                     <release>14</release>
+                    <source>16</source>
+                    <target>16</target>
                 </configuration>
             </plugin>
 
