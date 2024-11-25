@@ -1,14 +1,12 @@
-package amazon.pageobjectmodel.utilsclasses;
+package utilsclasses;
 
 import net.datafaker.Faker;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.Locale;
 
 /**
@@ -51,6 +49,17 @@ public class WebDriverUtils {
     public void waitForAlertPresent() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.alertIsPresent());
+    }
+
+    public void waitForElementsToBeVisible(List<WebElement> elements){
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.visibilityOf((WebElement) elements));
+    }
+
+    public void waitForPageToLoad() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(webDriver -> ((JavascriptExecutor) webDriver)
+                .executeScript("return document.readyState").equals("complete"));
     }
 
     public boolean isElementPresent(By locator) {
@@ -112,4 +121,5 @@ public class WebDriverUtils {
     public String generateFakePhoneNumber() {
         return faker.phoneNumber().phoneNumberInternational();
     }
+
 }
