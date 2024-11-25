@@ -3,6 +3,7 @@ package utilsintest;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import utilsclasses.ScreenShotUtility;
 
 /**
  * @aauthor : mr.muradil

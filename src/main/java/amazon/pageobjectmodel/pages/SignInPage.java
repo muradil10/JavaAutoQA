@@ -1,6 +1,6 @@
 package amazon.pageobjectmodel.pages;
 
-import amazon.pageobjectmodel.utilsclasses.WebDriverUtils;
+import utilsclasses.WebDriverUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
